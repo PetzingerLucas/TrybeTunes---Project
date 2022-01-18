@@ -1,0 +1,378 @@
+.login-page {
+  align-items: center;
+  display: flex;
+  flex-direction: column;
+  height: 100vh;
+  justify-content: center;
+}
+
+.login-form {
+  border-radius: 0.25rem;
+  box-shadow: 0 3px 5px 2px #00000025;
+  display: flex;
+  flex-direction: column;
+  gap: 20px;
+  height: 250px;
+  justify-content: center;
+  padding: 50px;
+  width: 500px;
+}
+
+.login-button {
+  background-color: #003be5;
+  border: none;
+  border-radius: 0.25rem;
+  color: white;
+  font-size: 1rem;
+  height: 35px;
+}
+
+.login-button:disabled {
+  background-color: rgba(0, 0, 0, 0.74);
+}
+
+.input-name {
+  background-color: transparent;
+  border: 1px solid rgb(231, 238, 238);
+  border-radius: 0.25rem;
+  padding: 10px;
+  width: 95%;
+}
+
+.label-name {
+  width: 100%;
+}
+
+.login-page img {
+  margin-bottom: 30px;
+  width: 150px;
+}
+
+.header-content {
+  display: flex;
+  flex-flow: row wrap;
+  justify-content: space-evenly;
+  width: 100%;
+}
+
+.div-user {
+  align-items: center;
+  background-color: white;
+  border-radius: 1rem;
+  color: #29313d;
+  display: flex;
+  height: 30px;
+  margin-right: 20px;
+  padding: 5px;
+  transform: translateY(15px);
+}
+
+.div-logo .user-img {
+  border-radius: 50%;
+  height: 30px;
+  margin-right: 10px;
+  transform: translateY(-1px);
+  width: 30px;
+}
+
+.div-logo img {
+  margin-left: 20px;
+  transform: translateY(-10px);
+  width: 100px;
+}
+
+.div-logo {
+  background-color: #023031;
+  color: aliceblue;
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  width: 100%;
+}
+
+.div-logo h4 {
+  margin-right: 30px;
+}
+
+.nav-bar {
+  background-color: #f0f2f5;
+  display: flex;
+  flex-direction: row;
+  justify-content: space-around;
+  margin-bottom: 30px;
+  width: 100%;
+
+}
+
+.nav-bar .selected {
+  background-color: #036b52;
+  color: #f0f2f5;
+}
+
+.nav-bar a {
+  align-self: center;
+  box-shadow: 0 3px 5px #00000025;
+  color: #023031;
+  justify-content: center;
+  margin-left: 2px;
+  padding: 20px;
+  text-align: center;
+  text-decoration: none;
+  width: 100%;
+}
+
+.album-card a {
+  color: #3d495c;
+  text-decoration: none;
+}
+
+.nav-bar a:hover {
+  background-color: #036b52;
+  color: #f0f2f5;
+}
+
+
+.search-form {
+  border-radius: 0.25rem;
+  display: flex;
+  flex-direction: column;
+  height: 150px;
+  justify-content: center;
+  width: 500px;
+}
+
+.search-form button {
+  background-color: #003be5;
+  border: none;
+  border-radius: 0.25rem;
+  color: white;
+  margin-left: 10px;
+  padding: 10px;
+  width: 100px;
+}
+
+.search-form input {
+  background-color: transparent;
+  border: 1px solid rgb(231, 238, 238);
+  border-radius: 0.25rem;
+  padding: 10px;
+  width: 70%;
+}
+
+.form-content {
+  display: flex;
+  justify-content: center;
+}
+
+.album-results {
+  display: flex;
+  flex-flow: row wrap;
+  justify-content: space-evenly;
+}
+
+.album-card {
+  border: 0.5px solid rgb(246, 246, 246);
+  border-radius: 0.5rem;
+  box-shadow: 0 3px 5px 2px #00000025;
+  margin-bottom: 50px;
+  padding: 0 0 20px;
+  text-align: center;
+  width: 300px;
+
+}
+
+.album-card img {
+  border-radius: 0.5rem;
+  width: 100%;
+}
+
+.album-card span {
+  font-size: 12px;
+  font-style: normal;
+  font-weight: 1;
+  line-height: 150%;
+}
+
+.album-card h3 {
+  font-size: 16px;
+  font-style: normal;
+  font-weight: 2000;
+  line-height: 150%;
+}
+
+.result-text {
+  color: #001813b7;
+  font-size: 24px;
+  font-style: normal;
+  font-weight: 300;
+  line-height: 25px;
+  margin-left: 50px;
+
+}
+
+.not-found-album {
+  color: #023031;
+  display: flex;
+  font-size: 60px;
+  font-style: normal;
+  font-weight: 300;
+  justify-content: center;
+  line-height: 65px;
+}
+
+.album-page {
+  display: flex;
+  flex-flow: row wrap;
+}
+
+.selected-album {
+  align-items: center;
+  display: flex;
+  flex-direction: column;
+  width: 50%;
+}
+
+.selected-album img {
+  border-radius: 0.5rem;
+  height: 290px;
+  width: 290px;
+}
+
+.selected-album span {
+  color: #023031;
+  font-size: 24px;
+  font-style: normal;
+  font-weight: 300;
+  line-height: 25px;
+
+}
+
+.selected-album h3 {
+  color: #023031;
+  font-size: 36px;
+  font-style: normal;
+  font-weight: 2000;
+  width: 290px;
+}
+
+.music-list {
+  border-radius: 0.5rem;
+}
+
+.music {
+  border-bottom: solid rgba(0, 0, 0, 0.151) 1px;
+  padding: 5px;
+}
+
+.favorite-page {
+  align-items: center;
+  display: flex;
+  flex-direction: column;
+
+}
+
+.favorite-page h2 {
+  text-align: center;
+  width: 100%;
+
+}
+
+.favorite-page img {
+  border-radius: 50px;
+  margin-right: 10px;
+}
+
+.profile-page img {
+  border-radius: 50%;
+  height: 100px;
+  width: 100px;
+}
+
+.profile-page {
+  align-items: flex-start;
+  display: flex;
+  flex-direction: column;
+  margin-left: 40%;
+  margin-top: 3%;
+
+}
+
+.img-button {
+  align-content: center;
+  align-items: center;
+  display: flex;
+  flex-direction: row;
+  justify-content: space-around;
+}
+
+.edit-profile-button {
+  align-items: center;
+  background-color: transparent;
+  border: solid 1px #003be5;
+  border-radius: 0.5rem;
+  color: #003be5;
+  display: flex;
+  height: 30px;
+  justify-content: center;
+  margin-left: 70px;
+  text-align: center;
+  text-decoration: none;
+  width: 100px;
+}
+
+.profile-edit-page {
+  display: flex;
+  flex-flow: column wrap;
+  margin-left: 20%;
+}
+
+.profile-edit-page form {
+  display: flex;
+  flex-direction: column;
+  gap: 50px;
+  margin-left: 20%;
+  max-width: 300px;
+  padding: 10px;
+
+}
+
+.profile-edit-page form input {
+  border: 1px solid white;
+  border-bottom: 1px solid black;
+  border-radius: 0.25rem;
+  height: 37px;
+  width: 100%;
+}
+
+.profile-edit-page form input, textarea:focus {
+  background-color: #f0f2f5;
+
+}
+
+.profile-edit-page form textarea {
+  border: 1px solid white;
+  border-bottom: 1px solid black;
+  border-radius: 0.25rem;
+  width: 100%;
+}
+
+.profile-edit-page img {
+  border-radius: 50%;
+  height: 100px;
+  margin-right: 20px;
+  width: 100px;
+}
+
+.profile-edit-page button {
+  background-color: #003be5;
+  border: none;
+  border-radius: 0.25rem;
+  color: white;
+  margin-left: 10px;
+  padding: 10px;
+
+}
+
+.profile-edit-page button:disabled {
+  background-color: rgba(0, 0, 0, 0.74);
+}
