@@ -4,6 +4,7 @@ import propTypes from 'prop-types';
 import { getUser } from '../services/userAPI';
 import Loading from './Loading';
 import logo from '../pages/trybeTunesLogo.svg';
+import defaultUser from '../pages/defaultUser.jpg';
 
 class Header extends React.Component {
   constructor() {
@@ -41,7 +42,11 @@ class Header extends React.Component {
               <div className="div-user">
 
                 {' '}
-                <img className="user-img" src={ image } alt="" />
+                <img
+                  className="user-img"
+                  src={ image !== '' ? image : defaultUser }
+                  alt=""
+                />
                 <h4 data-testid="header-user-name">{user}</h4>
               </div>
             )}

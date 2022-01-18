@@ -3,6 +3,7 @@ import { Redirect } from 'react-router-dom';
 import Header from '../components/Header';
 import Loading from '../components/Loading';
 import { getUser, updateUser } from '../services/userAPI';
+import defaultUser from './defaultUser.jpg';
 
 class ProfileEdit extends Component {
   constructor() {
@@ -78,7 +79,7 @@ class ProfileEdit extends Component {
               <div className="img-button">
                 <img
                   data-testid="profile-image"
-                  src={ image }
+                  src={ image !== '' ? image : defaultUser }
                   alt=""
                 />
                 <input
