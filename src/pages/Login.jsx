@@ -3,6 +3,7 @@ import { Redirect } from 'react-router-dom';
 import Loading from '../components/Loading';
 import { createUser } from '../services/userAPI';
 import logo from './LOGO_POSITIVA_1.png';
+import defaultUser from './defaultUser.jpg';
 
 class Login extends Component {
   constructor() {
@@ -23,7 +24,7 @@ class Login extends Component {
     const { userName } = this.state;
     event.preventDefault();
     this.setState({ loading: true }, async () => {
-      await createUser({ name: userName });
+      await createUser({ name: userName, image: defaultUser });
       this.setState({
         loading: false,
         logged: true });

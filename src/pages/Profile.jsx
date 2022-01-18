@@ -3,6 +3,7 @@ import { Link } from 'react-router-dom';
 import Header from '../components/Header';
 import Loading from '../components/Loading';
 import { getUser } from '../services/userAPI';
+import defaultUser from './defaultUser.jpg';
 
 class Profile extends Component {
   constructor() {
@@ -41,7 +42,7 @@ class Profile extends Component {
             <div className="img-button">
               <img
                 data-testid="profile-image"
-                src={ image }
+                src={ image !== '' ? image : defaultUser }
                 alt=""
               />
               <Link
