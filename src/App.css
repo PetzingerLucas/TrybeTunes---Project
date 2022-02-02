@@ -376,3 +376,35 @@
 .profile-edit-page button:disabled {
   background-color: rgba(0, 0, 0, 0.74);
 }
+
+
+@media screen and ( max-width : 600px ) and ( max-height : 920px ) {
+
+  .login-form {
+    zoom: 63%;
+  }
+
+  .header-content {
+    zoom: 90%;
+
+
+  }
+
+  .search-form, .music {
+    zoom: 75%;
+  }
+
+  .album-page {
+    margin-left: 5%;
+    zoom: 70%;
+  }
+
+  .profile-page {
+    transform: translateX(-20%);
+    zoom: 90%;
+  }
+
+  .loading {
+    zoom: 60%;
+  }
+}

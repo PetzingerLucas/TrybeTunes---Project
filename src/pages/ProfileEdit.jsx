@@ -30,7 +30,8 @@ class ProfileEdit extends Component {
     this.setState({
       [name]: value,
     }, () => {
-      const validationSuccess = user && email && image && description !== '';
+      const validationSuccess = user !== '' && email !== ''
+      && image !== '' && description !== '';
       if (validationSuccess) {
         this.setState({ disableButton: false });
       } else {
